@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Simple API Client</title>
+        <style>
+            *{
+                margin:0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .selectpane{
+                display: flex;
+                padding: 20px;
+                background-color: rgb(193, 193, 193);
+                border-radius: 10px;
+                margin:10px;
+                width:fit-content;
+                gap: 30px;
+                box-shadow: 0 0 5px gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="selectpane">
+            <span>
+                <input type="radio" onchange="" name="selectradio" value="POST">
+                POST PANEL
+            </span>
+            <span>
+                <input type="radio" onchange="" name="selectradio" value="GET">
+                GET PANEL
+            </span>
+        </div>
+        <div class="panels">
+            
+        </div>
+        <script>
+            function select_panel(){
+                const panel_select = document.getElementsByName("selectradio");
+                if(panel_select.value == "POST"){
+
+                }
+            }
+        </script>
+    </body>
+</html>

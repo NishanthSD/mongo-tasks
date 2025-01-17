@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A personl project to manage my tasks, I am quiet messy when it comes to personal organization",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
