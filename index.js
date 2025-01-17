@@ -40,8 +40,9 @@ app.get("/all_records", (req, res) => {
   const docs = coll.find().toArray();
   docs
     .then((doc) => {
-      res.write(JSON.stringify(doc));
-      res.end();
+      res.json({
+        doc:doc
+      })
     })
     .catch((err) => {
       res.write(err);

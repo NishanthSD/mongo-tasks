@@ -17,6 +17,16 @@
                 gap: 30px;
                 box-shadow: 0 0 5px gray;
             }
+            .panels{
+                overflow-y: scroll;
+                height: 200px;
+                background-color: rgb(193, 193, 193);
+                border-radius: 10px;
+                margin:10px;
+                width:fit-content;
+                gap: 30px;
+                box-shadow: 0 0 5px gray;
+            }
         </style>
     </head>
     <body>
@@ -30,7 +40,8 @@
                 GET PANEL
             </span>
         </div>
-        <div class="panels">
+        <p>Post Panel is under construction</p>
+        <div class="panels" id="panels">
             
         </div>
         <script>
@@ -40,6 +51,14 @@
 
                 }
             }
+                fetch("/all_records",{method:"GET"})
+                .then(d => d.json())
+                .then(data => {
+                    data_json = JSON.stringify(data,null,"\t")
+                    const panels = document.getElementById("panels")
+                    panels.innerHTML = `<pre>${data_json}</pre>`
+                })
+            
         </script>
     </body>
 </html>
