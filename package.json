@@ -1,0 +1,23 @@
+{
+  "name": "mongo-tasks",
+  "version": "1.0.0",
+  "description": "A personl project to manage my tasks, I am quiet messy when it comes to personal organization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NishanthSD/mongo-tasks.git"
+  },
+  "author": "Nishanth S D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NishanthSD/mongo-tasks/issues"
+  },
+  "homepage": "https://github.com/NishanthSD/mongo-tasks#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongose": "^0.0.2-security"
+  }
+}
