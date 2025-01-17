@@ -2,6 +2,11 @@ import { MongoClient } from "mongodb";
 import { config } from "dotenv";
 import express from "express";
 import path from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 config();
 
@@ -43,5 +48,9 @@ app.get("/all_records", (req, res) => {
       res.end();
     });
 });
+
+app.get("/",(req,res) => {
+  res.sendFile(path.join(__dirname,"index.html"));
+})
 
 app.listen(3000);
